@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trajetória de Karen Moraes</title>
+</head>
+<body>
+
+    <!-- Menu superior e título -->
+    <header class="cabecalho">
+
+        <nav class="menu-esquerdo">
+            <a class="menu-item" href="#home">HOME</a>
+            <a class="menu-item" href="#sobre">SOBRE</a>
+            <a class="menu-item" href="#form-titulo">CONTATO</a>
+        </nav>
+
+        <h1 class="titulo">Karen Moraes</h1>
+
+        <nav class="menu-direito">
+            <a class="menu-item" href="https://www.linkedin.com/in/karen-moraes-014251150/">LINKEDIN</a>
+            <a class="menu-item" href="https://www.instagram.com/karenlmoraes/">INSTAGRAM</a>
+            <a class="menu-item" href="http://www.karenlmoraes.com/">BLOG</a>
+        </nav>
+    </header>
+
+    <!-- Resumo / apresentação geral e botão do linkedin -->
+
+    <main class="conteudo">
+        <section class="conteudo-principal">
+
+            <img class="conteudo-principal-imagem" src="./img/perfil 1.png" alt="Foto de perfil 1">
+
+            <div class="conteudo-principal-1">
+
+                <h2 id="home" class="conteudo-principal-1-titulo">FUTURA DESENVOLVEDORA FULL STACK E<br> COSTUREIRA NAS HORAS VAGAS</h2>            
+
+                <p class="conteudo-principal-1-paragrafo">O primeiro contato que tive com o mundo da tecnologia da programação, foi com a popularização dos blogs lá em 2007. Eu sempre gostei de <strong>criar meu próprio layout</strong>, então passava os dias procurando tutoriais de CSS para estilizar meu blog (eu nem fazia ideia que era CSS na época). De tanto mexer no <strong>código HTML</strong> do meu blog, acabei conhecendo as principais tags. Nunca me aprofundei no assunto e agora estou tendo oportunidade com esse projeto Programadores Cariocas.</p>
+
+                <a href="https://www.linkedin.com/in/karen-moraes-014251150/"><button class="conteudo-principal-1-botao">Vamos nos conectar?</button></a>
+            </div>
+
+        </section>
+
+        <!-- Sobre mim: hobbies e interesses -->
+
+        <section class="conteudo-secundario">
+
+            <div class="conteudo-secundario-div1">
+
+                 <h3 id="sobre" class="conteudo-secundario-titulo">Oi, sou a Karen!</h3>
+
+                 <p class="conteudo-secundario-p1">E quem sou eu? Prazer, Karen, 26 (quase 27) anos e meu hobbie é aprender o máximo de coisas que conseguir (e não ser muito boa em nenhuma delas, porque quero aprender tudo ao mesmo tempo). Adoro criar. Sou apaixonada por rotina e organização, papelaria criativa e estou me descobrindo costureira, além de futura desenvolvedora web. Planos? Costurar meu próprio guarda-roupa e criar um layout responsivo para meu blog atual, que completou dez aninhos esse ano.
+                 </p>
+
+                <p class="conteudo-secundario-p2">Sou formada em Radiologia, porém, com a conclusão do curso de desenvolvedor, eu espero poder migrar para a área da tecnologia e finalmente conseguir um emprego que seja flexível e com um bom salário. Espero me realizar profissionalmente em uma carreira que além de permitir que eu viva confortavelmente e realize meus sonhos pessoais, também permita que eu ajude minha família, que me manteve até hoje.</p>
+
+                <ul class="conteudo-secundario-lista">
+                    <li class="conteudo-secundario-item">Desenvolvedor Web - Senac/Resilia</li>
+                     <li class="conteudo-secundario-item">Tecnólogo em Radiologia - Estácio</li>
+                </ul>
+            </div>
+
+            <img class="conteudo-secundario-imagem" src="./img/perfil 2.png" alt="Foto de perfil 2">
+
+        </section>
+
+        <!-- Início do formulário -->
+
+       <form class="form">
+
+        <!-- Título e subtítulo -->
+        <h4 id="form-titulo">Contato</h4>
+        <p id="form-subtitulo">Preencha os campos abaixo:</p>
+        <br>
+
+        <fieldset class="form-grupo">
+            
+            <!-- Campo do nome -->
+
+            <div class="campo"> 
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="Nome" id="nome" required>
+            </div>
+
+            <!-- Campo do email -->
+
+            <div class="campo">
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- Campo da assunto -->
+
+            <div class="campo">
+                <label for="assunto"><strong>Assunto:</strong></label>
+                <input type="text" name="assunto" id="assunto">
+            </div>
+
+            <!-- Campo da mensagem -->
+
+            <div class="campo">
+                <label for="mensagem"><strong>Mensagem:</strong></label>
+                <textarea rows="6" style="width: 26em;" id="mensagem" name="mensagem"></textarea>
+            </div>
+
+            <!-- Campo de nota -->
+
+            <div id="nota">
+                <label for="nota"><strong>Dê sua nota ao site:</strong></label>
+
+                <label>
+                    <input type="radio" name="opção 1" value="1" checked>1
+                </label>
+
+                <label>
+                    <input type="radio" name="opção 2" value="2">2
+                </label>
+
+                <label>
+                    <input type="radio" name="opção 3" value="3">3
+                </label>
+
+                <label>
+                    <input type="radio" name="opção 4" value="4">4
+                </label>
+
+                <label>
+                    <input type="radio" name="opção 5" value="5">5
+                </label>
+            </div>
+        </fieldset>
+
+        <button class="form-botao" type="submit" onsubmit="">Enviar</button>
+
+       </form>
+
+        
+    </main>
+
+    <!-- Rodapé -->
+
+    <footer class="rodape">
+        <p class="rodape-paragrafo">Desenvolvido por Karen Moraes</p>
+    </footer>
+
+</body>
+</html>
